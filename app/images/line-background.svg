@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940 701" width="1940" height="701">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.102;fill: #e74c3c } 
+		.shp1 { fill: none;stroke: #e74c3c;stroke-width: 3 } 
+	</style>
+	<path id="Shape 174 copy" class="shp0" d="M1924 51C1909.5 100.83 1572.5 503.61 1096 393C619.5 282.39 2 562 2 562L2 699.5L1922 699.5C1922 699.5 1938.5 1.17 1924 51Z" />
+	<path id="Shape 174" class="shp1" d="M2 562C2 562 619.5 282.39 1096 393C1572.5 503.61 1909.5 100.83 1924 51" />
+</svg>
