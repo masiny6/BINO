@@ -82,7 +82,7 @@ gulp.task('clean', function () {
 gulp.task('watch', function () {
 	gulp.watch('app/scss/*.scss', gulp.series('css'));
 	gulp.watch('app/*.html', gulp.series('html'));
-	gulp.watch('app/js/*.html', gulp.series('js'));
+	gulp.watch('app/js/*.js', gulp.series('js'));
 	gulp.watch(['app/images/*.png', 'app/images/*.svg', 'app/images/*.jpeg', 'app/images/*.jpg', 'app/images/*.gif'], gulp.series('img'));
 });
 

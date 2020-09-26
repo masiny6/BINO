@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="recent-works__filter">
-                <label for="" class="filter-element">all<input class="filter-element__input" type="checkbox"></label>
+                <label data-vaue="ALL" for="" class="filter-element">all<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">print design<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">animation<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">art<input class="filter-element__input" type="checkbox"></label>
@@ -567,21 +567,21 @@
                 </div>
                 <div class="keep-in-touch__form">
                     <form class="form form-centering">
-                        <fieldset class="form__inner">
-                            <legend class="form__legend">Name</legend>
-                            <input class="form__input" type="text">
+                        <fieldset class="form__inner-name">
+                            <input class="form__input-name" type="text" id="name">
+                            <label for="name" class="form__label-name">Name</label>
                         </fieldset>
-                        <fieldset class="form__inner">
-                            <legend class="form__legend">Email</legend>
-                            <input class="form__input" type="text">
+                        <fieldset class="form__inner-email">
+                            <input class="form__input-email" type="text" id="email">
+                            <label for="email" class="form__label-email">Email</label>
                         </fieldset>
-                        <fieldset class="form__inner">
-                            <legend class="form__legend">Subject</legend>
-                            <input class="form__input" type="text">
+                        <fieldset class="form__inner-subject">
+                            <input class="form__input-subject" type="text" id="subject">
+                            <label for="subject" class="form__label-subject">Subject</label>
                         </fieldset>
-                        <fieldset class="form__inner">
-                            <legend class="form__legend-textarea">Message</legend>
-                            <textarea class="form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                        <fieldset class="form__inner-subject">
+                            <textarea class="form__textarea" name="" id="message" cols="30" rows="10"></textarea>
+                            <label for="message" class="form__label-message">Message</label>
                         </fieldset>
                         <button class="form__button">Send message</button>
                     </form>
@@ -641,7 +641,33 @@
             loop:true,
             effect: 'flip'
         });
-        var swiperInfo = new Swiper('.case-study__swiper .swiper-container', {
+        var swiperServiceInfo = new Swiper('.our-service__list .swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+            loop:true,
+            effect: 'flip'
+        });
+        var swiperServicePhoto = new Swiper('.our-service__swiper-photo .swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+            loop:true,
+            effect: 'flip'
+        });
+        var swiperCaseInfo = new Swiper('.case-study__swiper .swiper-container', {
              pagination: {
                 el: '.case-study__swiper .swiper-pagination',
                 clickable: true,
@@ -651,7 +677,7 @@
             loop:true,
             effect: 'flip'
         });
-        var swiperImages = new Swiper('.case-study__picture .swiper-container', {
+        var swiperCaseImages = new Swiper('.case-study__picture .swiper-container', {
              pagination: {
                 el: '.case-study__swiper .swiper-pagination',
                 clickable: true,
@@ -661,7 +687,11 @@
             loop:true,
             effect: 'flip'
         });
-        swiperInfo.controller.control = swiperImages;
-        swiperImages.controller.control = swiperInfo;
+        swiperCaseInfo.controller.control = swiperCaseImages;
+        swiperCaseImages.controller.control = swiperCaseInfo;
+        swiperServicePhoto.controller.control = swiperServiceInfo;
+        swiperServiceInfo.controller.control = swiperServicePhoto
     </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </body>
