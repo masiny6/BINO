@@ -18,6 +18,7 @@
                 <img class="logo__img" src="../images/header-logo.png" alt="Лого сайта">
             </div>
             <nav class="header__menu">
+                <input class="burger-menu" type="checkbox" id="menu-phone"><label class="menu-phone" for="menu-phone"></label>
                 <ul class="menu">
                     <li class="menu__item"><a class="menu__item-text" href="#">home</a></li>
                     <li class="menu__item"><a class="menu__item-text" href="#">about us</a></li>
@@ -118,7 +119,7 @@
         <div class="our-history">
             <div class="centering">
                 <div class="our-history__picture">
-                    <img src="images/Monitor.png" alt="Монитор">
+                    <img class="picture-inner" src="images/Monitor.png" alt="Монитор">
                 </div>
                 <div class="our-history__text">
                     <h3 class="our-history__title">Our history</h3>
@@ -625,10 +626,15 @@
             </div>
         </div>
     </footer>
+    <a class="arrow"></a>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.header__carousel .swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -636,7 +642,6 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            mousewheel: true,
             keyboard: true,
             loop:true,
             effect: 'flip'
@@ -649,7 +654,6 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            mousewheel: true,
             keyboard: true,
             loop:true,
             effect: 'flip'
@@ -662,30 +666,33 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            mousewheel: true,
             keyboard: true,
             loop:true,
             effect: 'flip'
         });
         var swiperCaseInfo = new Swiper('.case-study__swiper .swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
              pagination: {
                 el: '.case-study__swiper .swiper-pagination',
                 clickable: true,
             },
-            mousewheel: true,
             keyboard: true,
-            loop:true,
-            effect: 'flip'
+            loop:true
         });
         var swiperCaseImages = new Swiper('.case-study__picture .swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
              pagination: {
                 el: '.case-study__swiper .swiper-pagination',
                 clickable: true,
             },
-            mousewheel: true,
             keyboard: true,
-            loop:true,
-            effect: 'flip'
+            loop:true
         });
         swiperCaseInfo.controller.control = swiperCaseImages;
         swiperCaseImages.controller.control = swiperCaseInfo;
