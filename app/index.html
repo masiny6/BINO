@@ -91,7 +91,7 @@
             <div class="centering">
                 <div class="advantages__element">
                     <div class="element-picture"><span class="glasses"></span></div>
-                    <h2 class="element-title">Sleek design</h2>
+                    <h2 class="element-title">Sleek design<br>sfdfsdf</h2>
                     <p class="element-description">Lorem Ipsum is simply dummy text of the printing and typesetting let.
                         Lorem Ipsum has been the industry.</p>
                 </div>
@@ -160,8 +160,46 @@
                                     Lorem Ip sum has been the industry's standard dummy text ever.</p>
                               </div>
                         </div>
-                        <div class="swiper-slide">gfhfgh</div>
-                        <div class="swiper-slide">hfghfg</div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__container-1">
+                                <h4 class="swiper-slide__title">Web design</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                            <div class="swiper-slide__container-2">
+                                <h4 class="swiper-slide__title">Print design</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                            <div class="swiper-slide__container-3">
+                                <h4 class="swiper-slide__title">Photography</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__container-1">
+                                <h4 class="swiper-slide__title">Web design</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                            <div class="swiper-slide__container-2">
+                                <h4 class="swiper-slide__title">Print design</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                            <div class="swiper-slide__container-3">
+                                <h4 class="swiper-slide__title">Photography</h4>
+                                <p class="swiper-slide__description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -187,22 +225,14 @@
                 </div>
             </div>
             <div class="recent-works__filter">
-                <label data-vaue="ALL" for="" class="filter-element">all<input class="filter-element__input" type="checkbox"></label>
+                <p class="title-phone">CATEGORIES</p>
+                <label for="" class="filter-element">all<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">print design<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">animation<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">art<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">web design<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">photography<input class="filter-element__input" type="checkbox"></label>
                 <label for="" class="filter-element">video<input class="filter-element__input" type="checkbox"></label>
-                <!--<ul class="recent-works__filter__list">
-                    <li class="recent-works__filter__list__element">All</li>
-                    <li class="recent-works__filter__list__element">Print Design</li>
-                    <li class="recent-works__filter__list__element">Animation</li>
-                    <li class="recent-works__filter__list__element">Art</li>
-                    <li class="recent-works__filter__list__element">Web design</li>
-                    <li class="recent-works__filter__list__element">Photography</li>
-                    <li class="recent-works__filter__list__element">Video</li>
-                </ul>-->
             </div>
             <div class="recent-works__examples">
                 <div class="examples__element-1">
@@ -325,11 +355,11 @@
         <div class="statistics">
             <div class="centering">
                 <ul class="statistics__list">
-                    <li class="heart element"><span class="element-number">3891</span><p class="element-text">User Favourites</p></li>
-                    <li class="sms element"><span class="element-number">281K</span><p class="element-text">Posts Last 24 Hours</p></li>
-                    <li class="like element"><span class="element-number">618</span><p class="element-text">Total Posts</p></li>
-                    <li class="star element"><span class="element-number">178</span><p class="element-text">Campaigns</p></li>
-                    <li class="bookmark element"><span class="element-number">285</span><p class="element-text">Amazing Features</p></li>
+                    <li class="heart element"><span class="element-number count">3891</span><p class="element-text">User Favourites</p></li>
+                    <li class="sms element"><span class="element-number count">281</span><span class="element-number">K</span><p class="element-text">Posts Last 24 Hours</p></li>
+                    <li class="like element"><span class="element-number count">618</span><p class="element-text">Total Posts</p></li>
+                    <li class="star element"><span class="element-number count">178</span><p class="element-text">Campaigns</p></li>
+                    <li class="bookmark element"><span class="element-number count">285</span><p class="element-text">Amazing Features</p></li>
                 </ul>
             </div>
         </div>
@@ -567,21 +597,21 @@
                     </div>
                 </div>
                 <div class="keep-in-touch__form">
-                    <form class="form form-centering">
+                    <form class="form form-centering js-form" action="#">
                         <fieldset class="form__inner-name">
-                            <input class="form__input-name" type="text" id="name">
+                            <input class="form__input-name" type="text" id="name" autocomplete="off" required>
                             <label for="name" class="form__label-name">Name</label>
                         </fieldset>
                         <fieldset class="form__inner-email">
-                            <input class="form__input-email" type="text" id="email">
+                            <input class="form__input-email" type="email" id="email" autocomplete="off" required>
                             <label for="email" class="form__label-email">Email</label>
                         </fieldset>
                         <fieldset class="form__inner-subject">
-                            <input class="form__input-subject" type="text" id="subject">
+                            <input class="form__input-subject" type="text" id="subject" autocomplete="off" required>
                             <label for="subject" class="form__label-subject">Subject</label>
                         </fieldset>
-                        <fieldset class="form__inner-subject">
-                            <textarea class="form__textarea" name="" id="message" cols="30" rows="10"></textarea>
+                        <fieldset class="form__inner-message">
+                            <textarea class="form__textarea" name="message" id="message" autocomplete="off" cols="30" rows="10" required></textarea>
                             <label for="message" class="form__label-message">Message</label>
                         </fieldset>
                         <button class="form__button">Send message</button>
@@ -700,5 +730,7 @@
         swiperServiceInfo.controller.control = swiperServicePhoto
     </script>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.spincrement.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
