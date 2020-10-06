@@ -654,6 +654,9 @@ p[class^="our-history__description"] {
 .recent-works {
   min-height: 1330px;
 }
+.title-phone {
+  display: none;
+}
 .recent-works__header {
   width: 600px;
   text-align: center;
@@ -2797,6 +2800,9 @@ a[class^="social-list__element-"] {
   /*---------------------*/
   .recent-works {
     min-height: 1330px;
+  }
+  .title-phone {
+    display: block;
   }
   .recent-works__header {
     width: 95%;
