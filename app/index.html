@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BINO</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.min.css">
 </head>
 
 <body>
+    <div class="wrapper">
     <header class="header">
         <div class="centering">
             <div class="logo">
-                <img class="logo__img" src="../images/header-logo.png" alt="Лого сайта">
+                <img class="logo__img" src="images/header-logo.png" alt="Лого сайта">
             </div>
             <nav class="header__menu">
                 <input class="burger-menu" type="checkbox" id="menu-phone"><label class="menu-phone" for="menu-phone"></label>
-                <ul class="menu">
+                <ul class="menu" id="menu">
                     <li class="menu__item"><a class="menu__item-text" href="#">home</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">about us</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">portfolio</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">pricing</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">team</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">blog</a></li>
-                    <li class="menu__item"><a class="menu__item-text" href="#">contact</a></li>
+                    <li class="menu__item"><a class="menu__item-text about-us-js" href="#our-history">about us</a></li>
+                    <li class="menu__item"><a class="menu__item-text portfolio-js" href="#portfolio">portfolio</a></li>
+                    <li class="menu__item"><a class="menu__item-text pricing-js" href="#pricing">pricing</a></li>
+                    <li class="menu__item"><a class="menu__item-text team-js" href="#team">team</a></li>
+                    <li class="menu__item"><a class="menu__item-text blog-js" href="#blog">blog</a></li>
+                    <li class="menu__item"><a class="menu__item-text contact-js" href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -87,11 +87,11 @@
     </header>
 
     <main class="main">
-        <div class="advantages">
+        <div class="advantages" id="advantages">
             <div class="centering">
                 <div class="advantages__element">
                     <div class="element-picture"><span class="glasses"></span></div>
-                    <h2 class="element-title">Sleek design<br>sfdfsdf</h2>
+                    <h2 class="element-title">Sleek design</h2>
                     <p class="element-description">Lorem Ipsum is simply dummy text of the printing and typesetting let.
                         Lorem Ipsum has been the industry.</p>
                 </div>
@@ -116,7 +116,7 @@
             </div>
         </div>
 
-        <div class="our-history">
+        <div class="our-history" id="our-history">
             <div class="centering">
                 <div class="our-history__picture">
                     <img class="picture-inner" src="images/Monitor.png" alt="Монитор">
@@ -215,7 +215,7 @@
             </div>
         </div>
 
-        <div class="recent-works">
+        <div class="recent-works" id="portfolio">
             <div class="recent-works__header">
                 <h4 class="header__title">Recent works</h4>
                 <p class="header__description">It has survived not only five centuries, but also the leap scrambled it
@@ -364,7 +364,7 @@
             </div>
         </div>
 
-        <div class="our-pricing">
+        <div class="our-pricing" id="pricing">
             <div class="our-pricing__header">
                 <h6 class="header__title">Our pricing</h6>
                 <p class="header__description">A 30 days free trial for all.
@@ -425,7 +425,7 @@
             </div>
         </div>
 
-        <div class="our-team">
+        <div class="our-team" id="team">
             <div class="our-team__header">
                 <h6 class="header__title">Our team</h6>
                 <p class="header__description">Meet the craziest team. Share your thoughts with them.</p>
@@ -485,21 +485,21 @@
             </div>
             <div class="centering">
                 <div class="partners__list">
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-1.png" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-2.png" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-3.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-4.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-5.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-6.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-7.png" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-8.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-9.jpg" alt=""></div>
-                    <div class="list-element"><img class="list-element-img" src="../images/partners-image-10.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-1.png" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-2.png" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-3.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-4.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-5.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-6.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-7.png" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-8.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-9.jpg" alt=""></div>
+                    <div class="list-element"><img class="list-element-img" src="images/partners-image-10.jpg" alt=""></div>
                 </div>
             </div>
         </div>
 
-        <div class="our-blog">
+        <div class="our-blog" id="blog">
             <div class="our-blog__header">
                 <h6 class="header__title">Our blog</h6>
                 <p class="header__description">Suspendisse sed eros mollis, tincidunt felis eget, interdum
@@ -510,7 +510,7 @@
             </div>
             <div class="our-blog__list">
                 <div class="our-blog-element">
-                    <div class="our-blog-element__picture"><img class="our-blog-img" src="../images/our-blog-img-1.jpg" alt=""></div>
+                    <div class="our-blog-element__picture"><img class="our-blog-img" src="images/our-blog-img-1.jpg" alt=""></div>
                     <div class="our-blog-element__news">
                         <div class="news-centering">
                             <p class="our-blog-element__teg">art / t-shirt</p>
@@ -525,7 +525,7 @@
                     </div>
                 </div>
                 <div class="our-blog-element">
-                    <div class="our-blog-element__picture"><img class="our-blog-img" src="../images/our-blog-img-2.jpg" alt=""></div>
+                    <div class="our-blog-element__picture"><img class="our-blog-img" src="images/our-blog-img-2.jpg" alt=""></div>
                     <div class="our-blog-element__news">
                         <div class="news-centering">
                             <p class="our-blog-element__teg">art / t-shirt</p>
@@ -540,7 +540,7 @@
                     </div>
                 </div>
                 <div class="our-blog-element">
-                    <div class="our-blog-element__picture"><img class="our-blog-img" src="../images/our-blog-img-3.jpg" alt=""></div>
+                    <div class="our-blog-element__picture"><img class="our-blog-img" src="images/our-blog-img-3.jpg" alt=""></div>
                     <div class="our-blog-element__news">
                         <div class="news-centering">
                             <p class="our-blog-element__teg">art / t-shirt</p>
@@ -555,7 +555,7 @@
                     </div>
                 </div>
                 <div class="our-blog-element">
-                    <div class="our-blog-element__picture"><img class="our-blog-img" src="../images/our-blog-img-4.jpg" alt=""></div>
+                    <div class="our-blog-element__picture"><img class="our-blog-img" src="images/our-blog-img-4.jpg" alt=""></div>
                     <div class="our-blog-element__news">
                         <div class="news-centering">
                             <p class="our-blog-element__teg">art / t-shirt</p>
@@ -572,7 +572,7 @@
             </div>
         </div>
 
-        <div class="keep-in-touch">
+        <div class="keep-in-touch" id="contact">
             <div class="keep-in-touch__header">
                 <h6 class="header__title">Keep in touch</h6>
                 <p class="header__description">
@@ -596,18 +596,18 @@
                         <a class="keep-in-touch__email" href="mailto:contactus@email.com">contactus@email.com</a>
                     </div>
                 </div>
-                <div class="keep-in-touch__form">
+                <div class="keep-in-touch__form" id="form-js">
                     <form class="form form-centering js-form" action="#">
                         <fieldset class="form__inner-name">
-                            <input class="form__input-name" type="text" id="name" autocomplete="off" required>
+                            <input class="form__input-name" name="name" type="text" id="name" autocomplete="off" required>
                             <label for="name" class="form__label-name">Name</label>
                         </fieldset>
                         <fieldset class="form__inner-email">
-                            <input class="form__input-email" type="email" id="email" autocomplete="off" required>
+                            <input class="form__input-email" name="email" type="email" id="email" autocomplete="off" required>
                             <label for="email" class="form__label-email">Email</label>
                         </fieldset>
                         <fieldset class="form__inner-subject">
-                            <input class="form__input-subject" type="text" id="subject" autocomplete="off" required>
+                            <input class="form__input-subject" name="subject" type="text" id="subject" autocomplete="off" required>
                             <label for="subject" class="form__label-subject">Subject</label>
                         </fieldset>
                         <fieldset class="form__inner-message">
@@ -657,78 +657,9 @@
         </div>
     </footer>
     <a class="arrow"></a>
+</div>
 
     <script src="js/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.header__carousel .swiper-container', {
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }, pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            keyboard: true,
-            loop:true,
-            effect: 'flip'
-        });
-        var swiperServiceInfo = new Swiper('.our-service__list .swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }, pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            keyboard: true,
-            loop:true,
-            effect: 'flip'
-        });
-        var swiperServicePhoto = new Swiper('.our-service__swiper-photo .swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }, pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            keyboard: true,
-            loop:true,
-            effect: 'flip'
-        });
-        var swiperCaseInfo = new Swiper('.case-study__swiper .swiper-container', {
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-             pagination: {
-                el: '.case-study__swiper .swiper-pagination',
-                clickable: true,
-            },
-            keyboard: true,
-            loop:true
-        });
-        var swiperCaseImages = new Swiper('.case-study__picture .swiper-container', {
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-             pagination: {
-                el: '.case-study__swiper .swiper-pagination',
-                clickable: true,
-            },
-            keyboard: true,
-            loop:true
-        });
-        swiperCaseInfo.controller.control = swiperCaseImages;
-        swiperCaseImages.controller.control = swiperCaseInfo;
-        swiperServicePhoto.controller.control = swiperServiceInfo;
-        swiperServiceInfo.controller.control = swiperServicePhoto
-    </script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.spincrement.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
