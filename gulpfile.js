@@ -21,6 +21,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('css', function () {
+	browserSync.notify('Compiling CSS');
 	return gulp.src(['app/scss/*.scss'])
 		.pipe(sass())
 		.pipe(cssnano({
@@ -54,7 +55,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('img', function () {
-	browserSync.notify('Compiling internal JS');
+	browserSync.notify('Compiling internal IMG');
 
 	return gulp.src(['app/images/*.png', 'app/images/*.svg', 'app/images/*.jpeg', 'app/images/*.jpg', 'app/images/*.gif'])
      	.pipe(imageMin())
